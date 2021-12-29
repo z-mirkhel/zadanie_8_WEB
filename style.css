@@ -1,0 +1,120 @@
+body{
+    background-color: rgb(235, 69, 160, 0.726);
+}
+.header{
+    display: flex;
+    height: 160px;
+    background: rgba(235, 69, 160, 0.726);
+    width: 100%;
+    border: thick double rgb(128, 18, 64, 0.596);
+}
+  
+.content-head{
+    height: 150px;
+    width: 96%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+  
+.header__logo{
+   padding: 14px 10px 10px 10px;
+   float: left;
+}
+  
+.header__text{
+    font-family: cursive;
+    width: 100%;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.popWindow{
+    display: none;
+    max-width: 720px;
+    top:50%;
+    left:50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(245, 222, 235);
+
+    text-align: center;
+    padding-bottom: 20px;
+}
+.popWindow h2{
+    color:rgb(51, 6, 29);
+    font-size: 30px;
+    z-index: 10;
+    position: relative;
+    
+    text-align: center;
+}
+.close-btn{
+    float:right;
+    font-size: 60px;
+    line-height: 40px;
+    cursor: pointer;
+    color: rgb(223, 11, 82);
+    padding: 10px;
+
+}
+.form-text{
+	text-align:center;
+	position:relative;
+}
+.thank-you-window{
+    margin: auto;
+    display: none;
+    padding: 5px;
+    height: 120px;
+    width: 340px;
+    box-shadow: 0 0 30px rgba(18, 17, 12, 0.5);
+    background-color: rgb(0, 0, 0);
+}
+.thanks{
+    font-size: 25px;
+}
+.popup-main-window{
+    width: 300px;
+}
+.popup-overlay{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(230, 116, 163);
+    z-index: 100;
+}
+
+
+.popWindow{
+    display: none;
+    margin: auto;
+    max-width: 750px;
+    padding-bottom: 20px;
+    top:50%;
+    left:50%;
+    box-shadow: 0 0 30px rgba(56, 7, 32, 0.5);
+    background-color: rgb(216, 147, 182);
+}
+
+@media (max-width:500px) {
+    .header{
+        width:auto;
+    }
+    .header__text{
+        font-size: 16px;
+        height: 30px;
+    }
+    .header__logo{
+        width: 160px;
+    }
+}
+@media screen and (max-width:1300px) {
+    .header__logo{
+      width: 200px;
+    }
+}
